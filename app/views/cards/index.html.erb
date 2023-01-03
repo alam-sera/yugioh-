@@ -1,0 +1,14 @@
+
+
+<p>Card Name: <%= @card["data"][0]["name"] %></p>
+<hr>
+<p>Card Description: <%= @card["data"][0]["desc"] %> </p>
+<hr>
+<p>Card Attack: <%= @card["data"][0]["type"] %> </p>
+<hr>
+
+<h3>Card Prices</h3>
+<p>Card Market: <%= @card["data"][0]["card_prices"][0]["cardmarket_price"] %></p>
+<p>TCG Player: <%= @card["data"][0]["card_prices"][0]["tcgplayer_price"] %></p>
+<p>Ebay: <%= @card["data"][0]["card_prices"][0]["ebay_price"] %> </p>
+<p>Amazon: <%= @card["data"][0]["card_prices"][0]["amazon_price"] %> </p>
