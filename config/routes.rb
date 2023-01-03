@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
 
 
-  get "cards/#{card_id}.jpg" => "cards#"
+  # get "cards/#{card_id}.jpg" => "cards#"
 end

@@ -1,13 +1,22 @@
-<img src="34541863.jpg" alt="eva" height="500" width="500">
-<p>Card Name: <%= @card["data"][0]["name"] %></p>
-<hr>
-<p>Card Description: <%= @card["data"][0]["desc"] %> </p>
-<hr>
-<p>Card Attack: <%= @card["data"][0]["type"] %> </p>
-<hr>
+<%= stylesheet_link_tag "card.css" %>
 
-<h3>Card Prices</h3>
-<p>Card Market: <%= @card["data"][0]["card_prices"][0]["cardmarket_price"] %></p>
-<p>TCG Player: <%= @card["data"][0]["card_prices"][0]["tcgplayer_price"] %></p>
-<p>Ebay: <%= @card["data"][0]["card_prices"][0]["ebay_price"] %> </p>
-<p>Amazon: <%= @card["data"][0]["card_prices"][0]["amazon_price"] %> </p>
+<img src="/<%=@card["data"][0]["id"]%>.jpg">
+
+<div>
+<h2><b><%= @card["data"][0]["name"] %></b></h2>
+<hr>
+<p><b>Card Description:</b> <%= @card["data"][0]["desc"] %> </p>
+<hr>
+<p><b>Attribute/Type:</b> <%= @card["data"][0]["attribute"] %> / <%= @card["data"][0]["type"] %> </p>
+<hr>
+<p><b>Level:</b> <%= @card["data"][0]["level"] %> </p>
+<hr>
+<p><b>Attack/Defense:</b> <%= @card["data"][0]["atk"] %> / <%= @card["data"][0]["def"] %>  </p>
+
+</div>
+
+<h4>Card Prices</h4>
+<p><a href="https://www.cardmarket.com/en/YuGiOh/Products/Singles/Speed-Duel-Battle-City-Box/Absorbing-Jar"> Card Market: </a> <%= @card["data"][0]["card_prices"][0]["cardmarket_price"] %></p>
+<p><a href="https://www.tcgplayer.com/product/59035/yugioh-galactic-overlord-absorbing-jar?Language=English"> TCG Player: </a> <%= @card["data"][0]["card_prices"][0]["tcgplayer_price"] %></p>
+<p><a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=absorbing+jar&_sacat=0"> Ebay:</a> <%= @card["data"][0]["card_prices"][0]["ebay_price"] %> </p>
+<p><a href="https://www.amazon.com/Yu-Gi-Oh-Absorbing-GAOV-EN037-Galactic-Overlord/dp/B0081I7LT6/ref=sr_1_2?crid=2IMNT8ISS2X4I&keywords=absorbing+jar&qid=1672775574&sprefix=absorbing+ja%2Caps%2C179&sr=8-2"> Amazon: </a> <%= @card["data"][0]["card_prices"][0]["amazon_price"] %> </p>
