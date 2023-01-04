@@ -1,25 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 7.0
 
-Things you may want to cover:
+Search for yugioh cards and view their images, details, and current prices on amazon, cardmarket, ebay, and tcgplayer.
 
-* Ruby version
+I used the yugioh API (https://ygoprodeck.com/api-guide/) to populate most of the card data. The API  does not allow for linking directly to their images so I downloaded the images locally to render them
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# yugioh-
